@@ -1,0 +1,218 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap"); */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif !important;
+}
+.carousel-inner .carousel-item {
+  object-fit: cover;
+}
+.navbar-link {
+  margin: 0 1rem 0 1rem;
+}
+
+.card {
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  transition: transform 100ms linear;
+  transform: scale(1.005);
+}
+.card-title {
+  text-align: center;
+}
+.discount-text {
+  color: tomato;
+}
+.card-deck .card {
+  margin: 2rem !important;
+}
+.categories-list {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0 0 0 !important;
+}
+.card-deck {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.home-heading {
+  text-align: center;
+  margin-top: 5rem;
+}
+.home-sub-heading {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.products {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 22%;
+  margin: 10px;
+}
+.productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  height: 90vh;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 0.5rem;
+}
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  background-color: rgb(236, 236, 236);
+  border-right: 1px solid rgb(202, 202, 202);
+  top: 0;
+  left: 0;
+  height: 91vh;
+  width: 15rem;
+}
+.filter-container h2 {
+  margin: 1rem 0 0 1rem;
+}
+.price-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-div {
+  font-size: 1.5rem;
+  color: green;
+}
+.price-mrp {
+  text-decoration: line-through;
+  opacity: 0.8;
+  color: grey;
+  font-weight: normal;
+  font-size: 1rem;
+}
+.availability-container,
+.price-container {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+p.tag {
+  background-color: rgb(255, 130, 108);
+  display: inline-block;
+  margin: 0.2rem;
+  border-radius: 20px;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  color: white;
+  font-weight: normal;
+}
+.product-title {
+  margin-bottom: 0 !important;
+  font-size: 1.1rem !important;
+}
+.product-sub-title {
+  color: grey;
+  margin-top: 0;
+  font-size: 0.8rem;
+}
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.card.border-primary {
+  float: left;
+  height: 100vh;
+}
+
+/* ==================================
+        Checkout Card
+===================================== */
+.checkout-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 90vh;
+}
+.checkout-list-div {
+  height: 80vh;
+  overflow-y: auto;
+}
+.checkout-card-container {
+  margin-left: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.product-image {
+  height: 10rem;
+  width: 10rem;
+}
+.checkout-product {
+  background-color: #eee;
+  width: 50rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.bill-container {
+  background-color: tomato;
+  height: 50vh;
+  top: 0;
+  right: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.quantity-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* End Checkout Card */
+
+/* ==================================
+        Responsiveness
+===================================== */
+@media only screen and (max-width: 700px) {
+  .filter-container {
+    display: none;
+  }
+  .products {
+    width: 85%;
+  }
+  .checkout-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .checkout-card-container {
+    width: 88%;
+    margin: auto;
+    align-items: center;
+  }
+  .checkout-product {
+    width: 100%;
+    flex-direction: column;
+  }
+  .checkout-list-div {
+    height: 100%;
+  }
+  .bill-container {
+    height: 10rem;
+    width: 100%;
+  }
+}
